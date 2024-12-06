@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.titulo {
+    text-align: center;
+    color: #174c4f;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    /* row-gap: 15px; */
+    /* column-gap: 15px; */
+}
+
+.card_input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #174c4f;
+    color: #fff;
+    box-shadow: 0px 0px 0.5em #666;
+    /* border-radius: 5px; */
+}
+
+.card_input h5 {
+    text-align: left;
+    background-color: #174c4f;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.container_form {
+    flex-wrap: wrap;
+}
+
+.label {
+    color: #174c4f;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-grow: 1;
+    min-width: 300px;
+}
+
+.label input,
+.label select {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9b9b9b;
+    min-width: 100%;
+    padding: 5px;
+    border-radius: 2px;
+    height: 36px;
+}
+
+.container_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.submit,
+.cancelar {
+    background-color: green;
+    min-width: 150px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cancelar {
+    background-color: red;
+}
+
+@media screen and (min-width: 600px) and (max-width: 2560px) {
+    .container_form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form {
+        row-gap: 25px;
+        column-gap: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+    .container {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 1650px) and (max-width: 2560px) {
+    .form {
+        width: 80%;
+    }
+}

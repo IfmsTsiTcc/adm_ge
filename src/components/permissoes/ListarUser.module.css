@@ -1,0 +1,22 @@
+.paiTopo{
+    border-style: solid;
+    border-color: #c4c4c4;
+    border-width: 1px;
+    padding: 15px;
+    border-radius: 2.5px;
+    justify-content: center;
+}
+.pai{
+    width: 70%;
+    margin: 0 auto;
+}
+@media(max-width: 575px){
+    .paiTopo{
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+    .pai{
+        width: 100%;
+    }
+}

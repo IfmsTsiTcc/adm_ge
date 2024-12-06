@@ -1,0 +1,173 @@
+.container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    transition: 2s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topo_form {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 10px;
+    justify-content: space-between;
+    border: solid 1px #174c4f;
+    margin-bottom: 10px;
+}
+
+.div_container_topo,
+.div_container_topo_add_contrato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 10px;
+    margin-top: 5px;
+    flex-grow: 1;
+    border: solid 1px #f3f3f3;
+    border-radius: 3px;
+}
+
+.div_container_topo:hover,
+.div_container_topo_add_contrato:hover {
+    opacity: 0.9;
+}
+
+.div_container_topo_add_contrato {
+    background-color: green;
+    color: #fff;
+}
+
+.input_topo {
+    width: 400px;
+    background-color: #e5e7eb;
+}
+
+.filtro {
+    width: 100%;
+    background-color: #e5e7eb;
+}
+
+input:focus,
+.filtro:focus {
+    outline: none;
+}
+
+table {
+    border: solid 1px #174c4f;
+    width: 100%;
+}
+
+.topo_tabela,
+.corpo_tabela {
+    background-color: #fff;
+    flex-grow: 1;
+}
+
+.corpo_tabela {
+    background-color: #f3f3f3;
+    flex-grow: 1;
+}
+
+.titulo {
+    flex-grow: 1;
+    padding: 5px;
+    text-align: left;
+    border-style: solid;
+    padding: 10px;
+    color: #174c4f;
+    text-transform: uppercase;
+    transition: 2s;
+}
+
+.titulo p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.titulo .nomeCliente {
+    color: #2684c5;
+}
+
+.id {
+    display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 850px) {
+    .topo_form {
+        flex-direction: column;
+        border-radius: 5px;
+    }
+
+    .input_topo {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+    .container {
+        white-space: unset;
+        padding: 10px;
+    }
+
+    .id {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        color: #fff;
+        background-color: #174c4f;
+    }
+
+    .opcoes {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .titulo,
+    table {
+        border: none;
+        text-align: center;
+    }
+
+    .corpo_tabela {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: solid 1px gray;
+    }
+
+    .titulo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .topo_tabela {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    .container {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1920px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}

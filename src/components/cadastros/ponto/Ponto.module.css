@@ -1,0 +1,46 @@
+.pai{
+    display: block;
+    justify-content: center;
+    
+}
+.paiTopo{
+    border-style: solid;
+    border-color: #c4c4c4;
+    border-width: 1px;
+    padding: 15px;
+    border-radius: 2.5px;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+.container, .containerSistemas{
+    width: 50%;
+    margin-right: 5px;
+    border-style: dotted;
+    border-width: 2.5px;
+    /* border-radius: 3px; */
+    padding: 8px;
+    border-color: black;
+}
+.containerSistemas{
+    width: 50%;
+    /* padding: 20px; */
+}
+@media(min-width: 575px){
+    .pai{
+        display: flex;
+        transition: 1s;
+    }
+}
+@media(max-width: 575px){
+    .paiTopo, .container, .containerSistemas{
+        border: none;
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .containerSistemas{
+        padding: 15px;
+    }
+}

@@ -1,0 +1,9 @@
+.input_topo{
+    width: 400px;
+    background-color: #e5e7eb;
+}
+@media screen and (min-width: 300px) and (max-width: 850px) {
+    .input_topo{
+        width: 100%;
+    }
+}

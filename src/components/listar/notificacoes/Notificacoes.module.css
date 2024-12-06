@@ -1,0 +1,80 @@
+.container {
+    background-color: transparent;
+    overflow-y: -moz-hidden-unscrollable;
+    box-shadow: none;
+    overflow-x: hidden;
+    padding: 5px;
+    border-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.areaContainer {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    width: 400px;
+    height: 80vh;
+    box-shadow: none;
+    transition: 1s;
+}
+
+.titulo {
+    color: #174c4f;
+    text-align: left;
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-transform: uppercase;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.containerNotificacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notificacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.remetente {
+    font-size: 12px;
+    text-align: left;
+    color: #174c4f;
+}
+
+.mensagem {
+    font-size: 11px;
+    text-align: left;
+    color: #174c4f;
+}
+
+@media (max-width: 600px) {
+    .areaContainer {
+        width: 300px;
+    }
+}

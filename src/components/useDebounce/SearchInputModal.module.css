@@ -1,0 +1,13 @@
+.input_topo{
+    width: 100%;
+    background-color: #e5e7eb;
+    padding: 10px;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+@media screen and (min-width: 300px) and (max-width: 850px) {
+    .input_topo{
+        width: 100%;
+    }
+}

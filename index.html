@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Salas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- Botão para adicionar sala -->
+  <div class="top-bar">
+    <button class="btn-add">Adicionar Sala</button>
+  </div>
+
+  <!-- Formulário de busca -->
+  <div class="search-form">
+    <input type="text" placeholder="Pesquisar Sala..." id="search-input">
+    <a class="btn-search">Buscar</a>
+    <a class="btn-cancel">Cancelar</a>
+  </div>
+
+  <!-- Tabela de salas -->
+  <table class="table-salas">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Turno</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Sala A</td>
+        <td>Manhã</td>
+        <td>
+          <button class="btn-edit">Editar</button>
+          <button class="btn-delete">Excluir</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Sala B</td>
+        <td>Tarde</td>
+        <td>
+          <button class="btn-edit">Editar</button>
+          <button class="btn-delete">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
